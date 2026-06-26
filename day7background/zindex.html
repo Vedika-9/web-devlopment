@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .red{
+            width: 200px;
+            height: 200px;
+            background: red;
+            z-index: 50;
+
+            /* Ignore */
+           position: absolute;
+           left: 100px;
+           top: 100px;
+        }
+
+
+        .blue{
+             width: 200px;
+            height: 200px;
+            background: blue;
+           
+
+            /* ignore */
+            position: absolute;  
+            left: 150px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+
+    </div>
+
+    <div class="blue">
+
+    </div> 
+</body>
+<!-- Z-index controls which element(HTML tag) will appear on the top. -->
+ <!-- position helps to move. -->
+</html>
