@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internalcss</title>
+<style>
+ /* TagName{
+            Css Properties
+       } */
+
+       button{
+           background-color: rgb(236, 10, 10);
+           color: white;
+           font-style: italic;
+       }
+
+       h2{
+        color: rgb(78, 21, 21);
+       }
+
+       div h2{
+        color: rgb(8, 254, 16);
+       }
+
+       div{
+        text-align: center;
+        background-color: beige;
+        width: 100px;
+        height: 100px;
+       }
+</style>
+
+</head>
+<body>
+   <button>Start</button>
+
+    <h2>Menu</h2>
+
+    <div>
+        <h2>Coffee</h2>
+        <p>Rs 100</p>
+    </div>
+
+     <div>
+        <h2>Cake</h2>
+        <p>Rs 200</p>
+    </div> 
+    <!-- we use internal css because it is easy to read and understand for coders ,
+     style tag is used in head  becuz it is css and body uses only html. -->
+     <!-- if we use inline and internal css both at the same time then inline css will always be 1st priority 
+      and it it will show incline css properties only .  -->
+     <!-- conclusion is that inline will be done 
+      even if there is internal , external as inline is highest priority of css ,
+       reason is becuz we write inline just after the tag name. -->
+</body>
+</html>
