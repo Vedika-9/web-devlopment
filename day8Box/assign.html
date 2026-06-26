@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Products</title>
+    <style>
+        .make{
+          
+background-color: antiquewhite;
+            color: rgb(206, 9, 9);
+
+            font-size: 30px;
+        }
+    
+         body{
+            font-family: 'Times New Roman', Times, serif;
+           height: 100vh;
+            background-image: url("https://images.pexels.com/photos/6479582/pexels-photo-6479582.jpeg");
+         background-size: cover;
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .product{
+            border: 1px solid rgb(45, 25, 217);
+            border-radius: 8px;
+            padding: 10px;
+           background-color: blanchedalmond;
+            height: 330px;
+            width: 250px;
+            margin-bottom: 15px;
+
+            text-align: center;
+            box-shadow: 4px 4px 8px black;
+            
+            /* box-shadow: Xaxis Yaxis Spread-Radius Color; */
+            box-shadow:     4px    4px       8px             black;
+        }
+
+.product h2{
+           border-bottom: 1px solid black;
+        }
+
+        .product img{
+            width: 100%;
+            height: 185px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product button{
+            background-color: rgb(19, 235, 51);
+            border: none;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .product:hover{
+            transform: rotateY(180deg);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="make"><h1>Ruby Cosmetics</h1></div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/14483746/pexels-photo-14483746.jpeg"  height="180" width="200">
+        <h2>Blush</h2>
+        <p>Rs 600</p>
+        <button>Buy Now</button>
+    </div>
+
+     <div class="product">
+        <img src="https://images.pexels.com/photos/2697787/pexels-photo-2697787.jpeg"  height="180" width="200">
+        <h2>Eyeliner</h2>
+        <p>Rs 500</p>
+        <button>Buy Now</button>
+    </div>
+
+
+     <div class="product">
+        <img src="https://images.pexels.com/photos/17471725/pexels-photo-17471725.jpeg"  height="180" width="200">
+        <h2>Eyeshadow Palette</h2>
+        <p>Rs 900</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/7810600/pexels-photo-7810600.jpeg"  height="180" width="200">
+        <h2>Lipstick</h2>
+        <p>Rs 550</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/30836146/pexels-photo-30836146.jpeg"  height="180" width="200">
+        <h2>Primer</h2>
+        <p>Rs 600</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg"  height="180" width="200">
+        <h2>Mascara</h2>
+        <p>Rs 600</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.pexels.com/photos/8981524/pexels-photo-8981524.jpeg"  height="180" width="200">
+        <h2>Liquid Foundation</h2>
+        <p>Rs 700</p>
+        <button>Buy Now</button>
+    </div>
+</body>
+</html>
