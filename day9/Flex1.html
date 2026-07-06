@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+ .products{
+            display: flex;
+           justify-content: center;
+            gap: 20px;
+           align-items: center;
+            flex-wrap: wrap;
+
+            height: 500px;
+            /* flex-direction: column; */
+            background-color: rgb(0, 81, 255);
+          }
+          
+        .box{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: rgb(174, 236, 19);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="products">
+      
+        <div class="box">Cake</div>
+        <div class="box">Cookies</div>
+        <div class="box">Pastry</div>
+
+        
+        <div class="box">Coke</div>
+        <div class="box">Pepsi</div>
+        <div class="box">Spirte</div>
+ 
+    </div>
+ <!-- section tag is used for structure purpose.   -->
+ <!-- display:flex - by default flex follows row layout and also if 
+     you want mention what you want use flex direction:__ . -->
+<!-- justify-content is only used when you to want to move your content from 
+     left to right direction (X axis/ Main axis), also it aligns everything under the display flex. -->
+<!-- gap means to add a space between content. (it is display property.) -->
+ <!-- flex wrap - will auto response all the content according to the screen size. -->
+ <!-- overflow hidden - can be used if you want to hide that content which is going out of space. (when not using flex wrap) -->
+</body>
+</html>

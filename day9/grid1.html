@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .products{
+            display: grid;
+            /* grid-template-columns: 300px 300px 300px; */
+
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+            /* grid-template-columns:2fr 1fr ; */
+
+            /* grid-template-rows: 100px 200px 230px; */
+
+/* grid-template-columns: repeat(No of Columns , size of each); */
+       grid-template-columns: repeat(4,2fr);
+             gap: 10px;
+            background-color: aquamarine;
+        }
+        .box{
+            background-color: rgb(16, 221, 23);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="products">
+        <div class="box">Product 1</div>
+        <div class="box">Product 2</div>
+        <div class="box">Product 3</div>
+        <div class="box">Product 4</div>
+        <div class="box">Product 5</div>
+        <div class="box">Product 6</div>
+    </div>
+</body>
+<!-- grid is a 2 dimensional layout ,it is like a table -rows and columns together.-->
+<!-- grid only changes as per instruction. -->
+<!-- grid-template columns tells the grid how many columns we require. -->
+<!-- fr stands for fraction of available space.
+  that means 1fr will take only space for a column as per availability. .-->
+<!-- 2fr means twice the size of 1fr. -->
+ <!-- grid template rows - will only give size to the products you write only.,
+   others will be by default be same size. -->
+   <!-- rather than writing multiple times the size , we simply use repeat. -->
+    <!-- note: you can create only 12 columns at one time., more than 12 won't fit in the screen -->
+</html>

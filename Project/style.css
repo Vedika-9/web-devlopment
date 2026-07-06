@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #203154;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav h2{
+    color: white;
+}
+
+.make{
+    display: flex;
+  gap: 20px;  
+}
+
+.make a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+    background-image:  url("https://images.pexels.com/photos/6479582/pexels-photo-6479582.jpeg");
+    background-size: cover;
+    color: rgb(243, 6, 18);
+    text-align: center;
+    padding: 120px 20px ;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.hero button {
+    font-family: 'Times New Roman', Times, serif;
+     padding: 15px 30px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.hero a{
+    color: #e20a18;
+     text-decoration: none;
+}
+
+.title{
+    background-color: bisque;
+    text-align: center;
+    margin: 40px 0;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.items{
+    display: grid;
+grid-template-columns: repeat(4 , 1fr);
+gap: 25px;
+padding: 0 60px;
+background-image: url(https://images.pexels.com/photos/7290709/pexels-photo-7290709.jpeg);
+background-size: cover;
+flex-wrap: wrap;
+}
+
+.product {
+    flex-wrap: wrap;
+
+    border: 1px solid rgb(14, 12, 12);
+    border-radius: 8px;
+    padding:30px;
+     background-color:blanchedalmond;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgb(142, 13, 13);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+product h2{
+           border-bottom: 1px solid black;
+        }
+
+.product img {
+ width: 100%;
+height: 270px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+ .product button{
+            background-color: rgb(19, 235, 51);
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+        }
+
+
+ .product:hover{
+            background-color: rgb(8, 201, 249);
+            transform: scale(1.04);
+            color: brown;
+            transform: rotateY(180deg);
+            transition: 2s;
+        }
+
+        #review {
+            background-color: rgb(165, 164, 240);
+        }
+
+        #review h2 {
+text-align: center;
+        }
+
+        #review div{
+            border: 1px solid;
+            height: 60px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+#contact{
+    font-family: 'Times New Roman', Times, serif;
+     background-color: rgb(76, 74, 157);
+}
+ 
+#contact h2{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(14, 16, 17);
+}
+
+#contact p{
+    font-size: 20px;
+    text-align: center;
+color: white;
+padding: 5px;
+}
+
+footer{
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}

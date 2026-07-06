@@ -14,32 +14,29 @@
             display: flex;
             justify-content: center;
             gap: 20px;  
-            gap: 20px;
             align-items: center;
             flex-wrap: wrap;
         }
- 
-
+ /* flex means one dimensional layout ie. either row or column */
+ /* justify-content:center - it is display property in which the content is moved to center. */
+/* flex-wrap: wrap - is used so that if we change our device then our web page will automatically fit into the device's screen. */
+       
         .product{
             border: 1px solid brown;
-            border: 1px solid black;
             border-radius: 12px;
             padding: 12px;
-           
             height: 300px;
             width: 250px;
             padding: 12px;
             margin-bottom: 15px;
-
             text-align: center;
-            box-shadow: 4px 4px 8px black;
             
             /* box-shadow: Xaxis Yaxis Spread-Radius Color; */
-            box-shadow:     4px    4px       8px             black;
+            box-shadow:     4px    4px       8px    rgb(71, 12, 233);
         }
 
         .product h2{
-           border-bottom: 1px solid black;
+           border-bottom: 1px solid rgb(175, 21, 21);
         }
 
         .product img{
@@ -48,20 +45,22 @@
             object-fit: cover;
             border-radius: 12px;
         }
-
-     button{
+/* object fit  cover is used to fit the object properly in the div box. */
         .product button{
-            background-color: orange;
+            background-color: rgb(0, 255, 0);
             border: none;
             padding: 10px;
             border-radius: 12px;
+width: 90%;
         }
-
+/* here width 90% means the width of the button will be 90% of the div box. */
 
         .product:hover{
-            transform: rotateY(200deg);
-            transition: 1s;
-            width: 90%;
+            background-color: aquamarine;
+            transform: scale(1.02);
+            transition: 2s;
+            color: rgb(242, 30, 11);
+             transform: rotateY(200deg);
         }
        
     </style>
@@ -95,4 +94,13 @@
         <button>Buy Now</button>
     </div>
 </body>
+<!-- body {
+    padding=0;
+    margin=0;
+    box-sizing: border-box;
+}  this used because we don't want any extra space , it removes extra space and show only the screen.-->
+  <!-- border-radius is used to make an edge into a curve. -->
+   <!-- margin is the space outside the box. -->
+    <!-- for checking how your website will look in any device we need to
+    right click on web page and click on inspect . -->
 </html>
