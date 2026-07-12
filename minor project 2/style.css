@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     flex-wrap: wrap;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #55163f;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav h2{
+    color: rgb(255, 255, 255);
+}
+
+.make{
+    display: flex;
+  gap: 20px;  
+}
+
+.make a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+    background-image:  url("https://images.pexels.com/photos/6479582/pexels-photo-6479582.jpeg");
+    background-size: cover;
+    color: rgb(248, 9, 164);
+    text-align: center;
+    padding: 120px 20px ;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.hero button {
+    font-family: 'Times New Roman', Times, serif;
+     padding: 15px 30px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.hero a{
+    color: #f55ac7;
+     text-decoration: none;
+}
+
+.title{
+    background-color: rgb(254, 236, 236);
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    color: #bd1e6e;
+}
+
+.items{
+    display: grid;
+grid-template-columns: repeat(3 , 1fr);
+gap: 25px;
+padding: 0 60px;
+background-color: #fdf1f1;
+}
+
+.product {
+    border: 1px solid rgb(14, 12, 12);
+    border-radius: 8px;
+    padding:30px;
+     background-color:rgb(245, 239, 231);
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgb(142, 13, 13);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product h2{
+           border-bottom: 1px solid black;
+        }
+
+.product img {
+ width: 100%;
+height: 270px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 5px;
+}
+
+.product p{
+    margin-bottom: 5px;
+}
+
+ .product button{
+            background-color: rgb(77, 20, 71);
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+.product button a{
+    text-decoration: none;
+    color: #fdf1f1;
+}
+
+ .product:hover{
+            background-color: rgb(198, 161, 193);
+            transform: scale(1.04);
+            color: brown;
+            transform: rotateY(180deg);
+            transition: 2s;
+            text-decoration: none;
+        }
+
+        .features {
+    padding: 60px 10%;
+    text-align: center;
+    background: #fff5f8;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #bd1e6e;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.feature-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow:4px 4px 8px rgb(97, 34, 44);
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+}
+
+.feature-box h3 {
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    color: #252323;
+    line-height: 1.6;
+}
+
+        .review {
+            padding: 30px 10% ;
+            background-color: rgb(251, 236, 238);
+            text-align: center;
+        }
+
+        .review h2 {
+            color:#bd1e6e;
+text-align: center;
+font: 30px;
+margin-bottom: 25px;
+        }
+
+        .review-container{
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           gap: 20px;
+        }
+
+        .review-box{
+            border-radius: 10px;
+           padding: 20px 20px;
+           background-color: rgb(247, 246, 245);
+           box-shadow: 4px 4px 8px rgb(152, 57, 73);
+           
+        }
+        .review-box:hover{
+            transform: translateX(4px);
+        }
+
+        .review-box h3{
+color: #d63384;
+margin-bottom: 10px;
+        }
+
+          .review-box p{
+ color: #2c2b2b;
+    line-height: 1.5
+          }
+
+
+.contact{
+    font-family: 'Times New Roman', Times, serif;
+     background-color: #fff5f8;
+     padding: 10px;
+
+}
+ 
+.contact h2{
+    font-size: 20px;
+    text-align: center;
+    color: #bd1e6e;
+    margin-bottom: 10px;
+}
+
+.contact p{
+    font-size: 15px;
+    text-align: center;
+color: rgb(18, 17, 17);
+padding: 5px;
+}
+
+footer{
+    background: #22151f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
