@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:beige;
+    color:#230303;
+}
+
+header{
+    background:#411616;
+    box-shadow:2px 4px 7px rgba(24, 23, 23, 0.1);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+
+.logo{
+    color:#e0e0e3;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#f2f1f4;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#3d35da;
+}
+
+.hero{
+    width:90%;
+    margin:auto;
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:40px;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h3{
+    color:#5f2727;
+    font-size:22px;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin:15px 0;
+}
+
+.hero-text h2{
+    color:#3e1414;
+    margin-bottom:20px;
+}
+ 
+.hero-text p{
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    margin-top: 20px;
+    display:inline-block;
+    padding:15px 35px;
+    background:#901313;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#574fd6;
+}
+
+.hero-image img{
+    width:350px;
+    border-radius:50%;
+    border:8px solid #3a070c;
+}
+
+section{
+   width: 90%;
+    margin:80px auto;
+}
+
+section h2{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:30px;
+    color:#461313;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+}
+section ul li{
+    list-style: none;
+}
+
+.card{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:2px 5px 9px rgba(0,0,0,.1);
+}
+
+.card:hover{
+    transform: rotateX(180deg);
+    transition: 2s;
+}
+
+.dim{
+    margin-top: 20px;
+    display: grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap: 25px;
+}
+
+.skill{
+    border: none;
+    border-radius: 8px;
+    padding:20px;
+     background-color:rgb(245, 239, 231);
+    margin-bottom: 1px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgb(142, 13, 13);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.skill:hover{
+   transform:translateY(-10px);
+   transition: 1s; 
+}
+
+.skill h3{
+font-size: 25px;
+color: #901313;
+margin-bottom: 10px;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    border: none;
+    border-radius: 8px;
+    padding:20px;
+     background-color:rgb(245, 239, 231);
+    margin-bottom: 1px;
+    text-align: center;
+    box-shadow: 4px 4px 8px rgb(142, 13, 13);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.project-card p{
+    margin-bottom: 8px;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    transition: 1s;
+}
+
+.project-card h3{
+   font-size: 25px;
+color: #901313;
+margin-bottom: 10px;
+}
+
+
+.tag{
+    color: #561b1b;
+     display: inline-block;
+  background-color: #fac4c4;
+  padding: 3px 8px;
+  margin: 3px 3px 5px 5px;
+  font-size: 12px;
+  border-radius: 3px;
+
+}
+.project-card button{
+    margin-top: 20px;
+    border: none;
+    background-color: #e09191;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+
+}
+
+.project-card a{
+    color: #a61b1b;
+    text-decoration: none;
+}
+
+.contact{
+    text-align:center;
+}
+.contact h2{
+    margin-bottom: 30px;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #461313;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  font-family:'Times New Roman', Times, serif;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #5b0a0a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+form button:hover {
+  background-color: #0c4987;
+}
+
+footer{
+    background:#231717;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
