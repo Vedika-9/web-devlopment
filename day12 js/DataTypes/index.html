@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+// Data types - different types of Data
+// 1.String - "anything between Quotes is string" or 'text'
+var customername ="Vedika"
+
+// build in Method /Function - Task
+// type of(value)
+console.log(typeof(customername))
+
+//2. Number - +ve, -ve, decimal number . 
+// all typeof numbers are considered numbers only .no float,int ,etc.
+
+var age = -12.3
+console.log(typeof(age))
+
+//3. Boolean - true or False
+// make sure you write true or false without quotes.
+
+var LoggedIn =true
+var NetflixSub = false
+console.log(typeof(LoggedIn))
+console.log(typeof(NetflixSub))
+
+//4. undefined - when no value is assigned 
+let x
+console.log(typeof(x))
+
+//5. null - nothing
+let discount = null
+console.log(typeof(discount))
+// there is bug in js, data type of null it shows Object as output.
+
+// Data Type -2 
+// To store multiple data we use array 
+// Mutiple value - Array
+
+// Array : To Store multiple data of Differnt data type
+// Symbol - [] Square bracket 
+// Rule : Index No(Position no of Data) starts with zero - 0
+
+var students = ["Shubham", "Varnit" , "true", "1001" , "Chocolate"]
+console.log(students)
+
+//to find out Total no of data, we use  .length
+console.log(students.length)
+
+//Access the Data Through Index No
+console.log(students[2])
+console.log(students[4])
+
+// Object : Collection of data that belongs to one single thing ex.Employee
+// symbol: { } curly  bracket
+// Rule : key : value pair
+
+var employee1 ={
+    //Key (left) = value (right)
+    
+    name: "Vedika", 
+    email: " abc@gmail.com",
+    LoggedInStatus : true
+    // every time you write one key value pair put a comma to separate them.   
+}
+console.log(employee1)
+
+//Access it through keyname- ie. objectname.keyname
+console.log(employee1.email)
+
+// Function- To do a specific task 
+// keyword - function functionname
+
+//Task :Build BillCalculator 
+
+function BillCalculator() {
+    // body of function - instruction/logic
+
+    var product1 = "Milk"
+    var product2 = "Bread"
+
+    var price1 = 100
+    var price2 = 200
+     
+    var TotalBill = price1 + price2
+    console.log("The Total Price of" , product1 , "and", product2 , "is:" , TotalBill)
+}
+BillCalculator()   // this is calling the function.
+
+</Script>
+</body>
+</html>

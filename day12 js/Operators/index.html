@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // Arthmetic Operators - + , - , / , * , %
+
+        var a = 10
+        var b = 7
+
+        console.log(a+b)   //17
+        console.log(a-b)  //3
+        console.log(a/b)  //1.something
+        console.log(a*b)  // 70
+
+        console.log(a % b)   //  % - Remainder (output) 
+        // 11% 2: remainder -1 here, left > right number  , 2%11 - 2 here, left < right  = left number 
+// for even and odd no , if it is 0 it will be even(4%2- 0) and if not 0 it will be odd(3%2- non zero).
+         
+     // Assiggment operator - Help us to assign value by using equal to - =
+
+        var x = 10  
+
+        //Assign and Operation
+        console.log( x+= 2)  //12
+
+//create a function and find the sum of 1 2 3 4 5 in js in array
+let numbers = [1, 2, 3, 4, 5];
+
+// Function to calculate sum
+function findSum(arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+// Call the function
+let result = findSum(numbers);
+// Display the result
+console.log("Sum of array elements:", result);
+
+
+        //Comaprison Operators - == , === , != , !== , > , < , >= , <= output: Boolean
+
+        let sum = 10
+        sum = 20
+
+        const pi = 3.14
+
+        const p =10
+        const q = 5
+
+        console.log(p > q)  //T
+        console.log(p < q)  //F
+
+        const age1 = 35
+        const age2 = 35
+
+        console.log(age1 >= age2)  //T
+        console.log(age1 <= age2)  //T
+
+        const height1 = 170
+        const height2 = "170"
+
+         // == :Only Checks The value
+         console.log(height1 == height2)  //True
+
+        // === : Its Check The Value and Data type
+         console.log(height1 === height2)  //False
+
+
+
+       //  Logical Operators - AND , OR , NOT
+
+       //AND- && : Both Condition is True Then Output is True
+
+       const isLoggedIn = true
+       const NetflixSub = false
+
+       console.log("Can Watch Movie " , isLoggedIn && NetflixSub)
+
+
+       // OR || : Only if One Condition is True Then Output is True
+
+       let isMember = false
+       let TotalBill = 800
+
+       console.log("Discount Eligible " , isMember || TotalBill >= 800)
+
+
+       // ! Oppostie 
+
+       let LoggedIn = false;
+
+       console.log(!LoggedIn)   // true
+
+    </script>
+</body>
+</html>
