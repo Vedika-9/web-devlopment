@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        .piano{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .key{
+            border: 1px solid black;
+            width: 60px;
+            height: 200px;
+            margin: 2px;
+            background-color: white;
+            box-shadow: 2px 2px 5px black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+     <h1>Piano - Events</h1>
+
+    <div class="piano">
+              <div class="key"  data-note="C">C</div>
+              <div class="key"  data-note="D">D</div> 
+              <div class="key"  data-note="E">E</div>     
+              <div class="key"  data-note="F">F</div>
+              <div class="key"  data-note="G">G</div>
+              <div class="key"  data-note="A">A</div>
+              <div class="key"  data-note="B">B</div>
+    </div>
+                 <!-- data- nameofdata =" ..." --> 
+                  <!-- data-  storing the value of note / giving data to html tag-->
+    <audio id="audio-C"  src="./freemanstudio-piano-sound-230348.mp3"></audio>
+    <audio id="audio-D"  src="./freesound_community-la-80237.mp3"></audio>
+    <audio id="audio-E"  src="./freesound_community-mi-80239.mp3"></audio>
+    <audio id="audio-F"  src="./freesound_community-piano-g-6200.mp3"></audio>
+    <audio id="audio-G"  src="./freesound_community-piano-reverse-101278.mp3"></audio>
+    <audio id="audio-A"  src="./freesound_community-piano_inside_glissando_3-77027.mp3"></audio>
+    <audio id="audio-B"  src="./freesound_community-summer-night-piano-solo-6885.mp3"></audio>
+
+    <script>
+        const keys = document.querySelectorAll(".key")  // here you should not use getElem..byclassname cuz it does not work for forEach.
+
+        console.log(keys)   //keys is the Array which is store all the div containers
+
+         keys.forEach( function(e){       //foreach loop- each data on array and do one task 
+
+            const note = e.getAttribute("data-note") 
+
+            const audio = document.getElementById("audio-"+note)
+          
+
+            //Action-click
+            e.addEventListener('click',function(){
+                audio.currentTime = 0;
+                audio.play()
+            })
+
+
+            //Mouse
+            e.addEventListener('mouseover',function(){
+                e.style.backgroundColor = "red"
+            })
+
+            e.addEventListener('mouseout',function(){
+                e.style.backgroundColor = "white"
+            })
+
+        }) 
+        
+        // getClass - HTML collection
+        // querySelect - NodeList
+        // ForEach works on NOdeList.
+        // HTML collection updates automatically when  the DOM changes.
+        // Query Selector remains as a static Collection , it does not  update automatically.
+
+    // in short , HtML  collection - live list + no forEach
+    // Nodelist -static list + forEach
+    </script>
+</body>
+</html>

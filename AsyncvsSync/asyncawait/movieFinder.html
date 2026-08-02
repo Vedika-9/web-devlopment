@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//API - Carries Data 
+        // http://www.omdbapi.com/?t=MovieName&apikey=caadc069
+
+        // function : normal
+        // async function : Handles multiple task 
+        // await - waiting time
+
+  async function getMovie(movieName){
+
+         let url = `http://www.omdbapi.com/?t=${movieName}&apikey=caadc069`
+
+        try{
+        //Getting Data From API
+        let response   =   await fetch(url)
+        let   data    =  await  response.json()
+        console.log(data)
+            
+        if(data.Response == "True"){
+                    console.log(   `Title :  ${data.Title}`    )
+                    console.log(   `Year :  ${data.Year}`      )
+                    console.log(   `Plot :  ${data.Plot}`      )
+                    console.log(   `Poster :  ${data.Poster}`  )
+
+                }else{
+                    console.log("Movie Not Found")
+                }
+            }
+
+        catch(error){
+                //Error
+                console.log("Error Fetching Movie " , error)
+            }
+        }
+        getMovie("Duang With You")
+
+
+
+        function ExtraTask(){
+            console.log("Hello everyone welcome To Js")
+        }
+        ExtraTask()
+    </script>
+</body>
+</html>

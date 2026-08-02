@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Showing how to access selectors in Js. -->
+     <p id="myP">This is Paragraph Tag</p>   <!-- id-for single value -->
+
+    <div class="myB">This is Div - 0</div>   <!-- class-for many values/data -->
+    <div class="myB">This is Div - 1</div>
+
+    <p>This is paragraph - 1</p>
+    <p>This is Paragaph -  2</p>
+
+    <button>Login</button>
+
+
+    <div class="box">HTML</div>
+    <div class="box">Javscript</div>
+
+    <script>  
+    // Document(webpage)-HTML Object Model
+    
+    //Select Method - getelement....  and query selector
+    //document - webpage , element - tag
+    //  getElementById("Id_Name")
+    // document keyword gives you access to webpage
+    // method name is  getElementById("Id_Name")
+    // method textContent gives you access to content in html tag.
+
+     const  paragaph  =  document.getElementById("myP")         // only element= variable
+
+    console.log(paragaph)
+
+    console.log(paragaph.textContent)   
+
+
+ // getElementsByClassName("Class_Name")
+
+    const container = document.getElementsByClassName("myB")    // elements = array
+
+    console.log(container)
+
+    console.log(container[1])  // accessesing index no
+
+    console.log(container[1].textContent)   // accessesing index no with only text content
+
+
+    // getElementsByTagName("TagName")
+
+    const elem = document.getElementsByTagName("p")    // because it is elements(more than one data) that is why it is creates default Array.
+    console.log(elem)    // all para tag will be selected .
+    console.log(elem[1])   // only index no will be accessed.
+    console.log(elem[1].textContent)   // index no with text content will be accessed.(you need to write index no or js will be confused for text content)
+
+    const btn = document.getElementsByTagName("button")
+    console.log(btn)
+    console.log(btn[0].textContent)
+
+    
+ //querySelector() - I will follow CSS selector formula , #idname , .className , Tagname
+ // Select the first HTML single Element/Tag
+// it selects only individual data which is first.
+      const abc = document.querySelector(".box")
+      console.log(abc)
+
+
+      const xyz = document.querySelectorAll(".box")     // for all query
+      console.log(xyz)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

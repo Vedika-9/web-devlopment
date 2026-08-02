@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulation</title>
+</head>
+<body>  
+    <!-- All about manual html vs In Javascript -->
+    <!-- Example 1 updating textContent -->
+             
+    <button id="btn">Login</button>
+
+    <p id="mp">welcome guest</p>
+
+       <!-- Example 2 - updating Tag itself -->
+    <div id="mydiv" style="background-color: bisque;">This is Div</div>
+
+    <!-- Example --  3 change the css prop -->
+     <p id="abc">This is Old Dull Paragraph</p>
+
+
+    <!--Example 4 Create Element/Tag Through Js  -->
+    <ul id="xyz">
+        <li>Gym</li>
+    </ul>
+
+    <script>
+
+        //Update text Content 
+        const button = document.getElementById("btn")
+
+        console.log(button)
+
+        console.log(button.textContent)
+
+        button.textContent = "Logout"   //assigned
+
+        const paragaph = document.getElementById("mp")
+        paragaph.textContent = "Good evening "
+
+
+
+        //Example 2 - updating Tag itself
+        //update Tag - innerHTML - Which Help us to update Tag also content as well
+
+        const container = document.getElementById("mydiv")
+
+        console.log(container)
+
+        //single Html tag updates under qutoes
+        // container.innerHTML = "<h2>This is Heading Tag Now</h2>"   // you have to write everything ie. opening of tag also closing.
+
+         //multiple html tags under backtick ``
+        container.innerHTML = `
+        <p>This is <mark>Updated</mark> Tag</p>     
+        <img src="https://images.pexels.com/photos/38593974/pexels-photo-38593974.jpeg" height="100" width="150">
+        <button>Smile</button>
+        
+        `
+
+
+        //Example --  3 change the css prop 
+
+         const para = document.getElementById("abc")
+          //.style.propertyName  // syntax
+
+         para.style.color = "red"
+         para.style.backgroundColor="black"
+         para.style.textAlign="center"
+         para.textContent = "This is New Paragaph Tag"
+
+
+
+        //Example 4 Create Element/Tag Through Js
+
+         const list = document.getElementById("xyz")
+
+        //  document.createElement("TagName")     //syntax
+         const li =   document.createElement("li")
+         li.textContent = "Office"
+         li.style.color = "red"
+
+         //ParentName.appendChild(ChildTagName)
+         list.appendChild(li)          //append means to add
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

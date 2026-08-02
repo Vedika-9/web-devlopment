@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv{
+            margin-top: 15px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(207, 156, 239);
+            overflow: auto;
+        }
+
+        .content{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome To Event </h2>
+
+    <input id="myInput" placeholder="Type Something To Search ">
+
+    <div id="mydiv">
+        <div class="content">Scroll Inside Me</div>
+    </div>
+
+    <script>
+
+        //1. keyup - When key is released you get Output
+        // input.addEventListener('keyup',function(e){       // created parameter "e"  to store value
+        //     console.log('Key Released -' +  e.key)     
+        // })
+
+
+        //2.keydown - When key is Pressed you get Output          // how many times press a key.
+        // input.addEventListener('keydown',function(x){
+        //     console.log('Key Pressed -' +  x.key)     // .key helps you get the access of keyboard keys
+        // })
+
+        //3. Change - Change Happening in The Input.  // user can change their search  
+        input.addEventListener('change', function(y){
+            console.log('Value of Input - ' + y.target.value)    // .value - when you want the know the exact value written in search box/ returns exact value.
+        })
+
+         //4.Mouseover - Moving Mouse Over something
+        div.addEventListener('mouseover',function(){
+            div.style.backgroundColor="yellow"
+        })
+
+
+         div.addEventListener('mouseout',function(){     //mouseout
+            div.style.backgroundColor="red" 
+        })
+
+    </script>
+</body>
+</html>

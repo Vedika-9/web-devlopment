@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <img id="cat" height="400" width="400">
+
+     <button id="btn" onclick="getImage()">Get Image</button>
+
+
+    <script>
+        // API - waiter/helper
+    //API carries data
+      //  https://api.thecatapi.com/v1/images/search
+
+     function getImage(){
+
+
+      const catImage = document.getElementById("cat")
+
+      // fetch() - helps to get the data from API
+      fetch("https://api.thecatapi.com/v1/images/search")
+
+      .then(res => res.json())    //res is parameter you write between function.  //converting api data to json format
+// data in 'res.json' will be passed on to the 'data' in next line.
+      .then(data => catImage.src = data[0].url)  // writing index no 0 and url // cat image will come on webpage.  
+
+      .catch(err => console.log("Error Connection ",err))      // for error
+     }      // () =>  arrow function ie. function written in  one single line.
+    </script>
+</body>
+</html>

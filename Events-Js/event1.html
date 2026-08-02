@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button id="btn">Add To Cart</button>
+
+    <p id="msg"></p>
+
+    <script>
+
+  //1. Select Element
+ const button =    document.getElementById("btn")
+
+    const message =   document.getElementById("msg")
+    
+// Events : Action performed by user on Webpage
+//2. addEventListner('Type of Event',function(){ } )               // inbuilt method in js
+// addEventListener- Listen To Action
+
+//1. click 
+    button.addEventListener('click',function(){
+        message.textContent = "Product Added To Cart"
+
+    })
+
+  //1. dblclick 
+    button.addEventListener('dblclick',function(){
+        message.textContent = "Product Added To Cart"
+
+    })  
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

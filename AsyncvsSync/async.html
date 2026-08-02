@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //Asynchronous - Handling Multiple Task At The Same Time
+     // three types - callbacks, promises , async and await
+
+        //Task 1 : Coffee - 10 sec
+        function StartTask(){
+            console.log("Step 1 : Boil  Water - 5 Sec")
+
+             setTimeout(()=>{
+               console.log("Step 2 : Water is Ready")
+             },5000)  
+
+            console.log("Step 3: Doing Other Task  As well")
+        }
+        StartTask()
+
+
+        //Task 2: Greeting - 2 sec
+        function greeting(){
+            console.log("Good evening Welcome Back User")
+        }
+        greeting()
+    </script>   
+</body>
+</html>
