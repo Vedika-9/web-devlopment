@@ -1,0 +1,53 @@
+:root {
+  --color-bg: #14161a;
+  --color-surface: #1c1f26;
+  --color-surface-raised: #22262f;
+  --color-border: #2c303a;
+  --color-text: #ededed;
+  --color-text-muted: #7c05b4e1;
+  --color-amber: #40269e;
+  --color-teal: #2dd467;
+  --color-danger: #e5484d;
+
+  --font-display: 'Space Grotesk',times ;
+  --font-body: 'Inter', times;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
